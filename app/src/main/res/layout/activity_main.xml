@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_activityBackground"
+    android:layoutDirection="ltr"
+    tools:context="com.simmorsal.devrantnative.activity.MainActivity"
+    tools:ignore="UnusedAttribute">
+
+    <FrameLayout
+        android:id="@+id/frlViewPager"
+        android:layout_marginBottom="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/plus"
+        app:rippleColor="#e9c6ca" />
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:id="@+id/linBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3d3d3d">
+
+        <RelativeLayout
+            android:id="@+id/relRants"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewRants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#535353" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/rants"
+                android:tint="@color/dark_selectedBottomNavigationButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relStories"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewStories"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#535353" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/stories"
+                android:tint="@color/dark_normalBottomNavigationButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relCollabs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewCollabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#535353" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/collabs"
+                android:tint="@color/dark_normalBottomNavigationButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relNotifs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewNotifs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#535353" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/notifs"
+                android:tint="@color/dark_normalBottomNavigationButton" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/viewMore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#535353" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/menu"
+                android:tint="@color/dark_normalBottomNavigationButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/linBottomNavigation"
+        android:background="#787878" />
+
+</RelativeLayout>
