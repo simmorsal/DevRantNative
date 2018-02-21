@@ -1,6 +1,8 @@
 # DevRant Native
 
  A devRant demo made natively for android by a native of devRant.
+ 
+ ![devrantnative2](https://user-images.githubusercontent.com/24822099/36509402-de1eaef2-1774-11e8-925b-106d4087b5c9.gif)
 
 ### Key Differences
 
