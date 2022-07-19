@@ -19,4 +19,4 @@ in feed, finished with "... \[Read More\]", by loading it instantly.
 
 ### License
 
-None.
+None. Have fun with the code.
